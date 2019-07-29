@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %>Ruby on Rails Tutorial Sample App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <%= yield %>
+
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+  </body>
+</html>
